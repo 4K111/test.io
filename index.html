@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmed by Aki</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- AOS стили для анимаций -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Иконки Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-/...ваш-код..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+
+<!-- Бывшая левая панель, теперь правая -->
+<aside class="sidebar" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+    <nav class="photo-switcher">
+        <ul>
+            <li><button class="photo-nav-button" data-target="photo-1">Ярославль</button></li>
+            <li><button class="photo-nav-button" data-target="photo-2">Раменский район</button></li>
+            <li><button class="photo-nav-button" data-target="photo-3">Москва</button></li>
+        </ul>
+    </nav>
+</aside>
+
+<!-- Бывшая правая панель, теперь левая -->
+<aside class="profile-sidebar collapsed" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+    <div class="profile-content">
+        <img src="photos/me.jpg" alt="Фотограф" class="profile-img">
+        <div class="profile-info">
+            <h3>Дмитрий</h3>
+            <p><span class="highlight">Возраст:</span> 21 год</p>
+            <p><span class="highlight">Город:</span> Москва, Россия</p>
+            <p><span class="highlight">Обо мне:</span> Фотограф-любитель, вдохновленный природой и тишиной. Снимаю пейзажи и моменты, которые говорят сами за себя.</p>
+            <div class="contact-section">
+                <div class="social-buttons">
+                    <a href="https://vk.com/boyakii" target="_blank" class="social-button">VK</a>
+                    <a href="https://t.me/im4k11" target="_blank" class="social-button">Telegram</a>
+                    <a href="mailto:s0rryman@mail.ru" class="social-button">Email</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<!-- Основной контент -->
+<main class="main-content">
+    <section id="gallery" class="gallery-section">
+        <h1 data-aos="fade-up">Галерея</h1>
+
+        <!-- Фотография 1 -->
+        <div class="photo-block" id="photo-1" data-aos="fade-up">
+            <div class="photo-info">
+                <h2>Ярославь, Россия</h2>
+                <p class="date">август 2024</p>
+                <p class="caption">Вечер. Парк Подзеленье. Всё тихо...</p>
+            </div>
+            <div class="photo-frame">
+                <img src="photos/2.jpg" alt="Ярик" />
+                 <div class="like-section">
+    <button class="like-button" onclick="incrementLike(this)">
+        <i class="fas fa-heart"></i>
+        <span class="like-count">0</span>
+    </button>
+</div>
+            </div>
+        </div>
+
+        <div class="photo-block" id="photo-2" data-aos="fade-up">
+            <div class="photo-info">
+                <h2>Раменский район, Московская область, Россия</h2>
+                <p class="date">август 2025</p>
+                <p class="caption">Если бы знали Вы как мне дороги Подмосковные вечера...</p>
+            </div>
+            <div class="photo-frame">
+                <img src="photos/3.jpg" alt="МО" />
+                 <div class="like-section">
+    <button class="like-button" onclick="incrementLike(this)">
+        <i class="fas fa-heart"></i>
+        <span class="like-count">0</span>
+    </button>
+</div>
+            </div>
+        </div>
+
+        <div class="photo-block" id="photo-3" data-aos="fade-up">
+            <div class="photo-info">
+                <h2>Москва, Россия</h2>
+                <p class="date">апрель 2025</p>
+                <p class="caption">Прогулка после рабочего дня - важный ежедневный ритуал полезный для развития навыка замечать красоту вокруг</p>
+            </div>
+            <div class="photo-frame">
+                <img src="photos/9.jpg" alt="М" />
+                <div class="like-section">
+    <button class="like-button" onclick="incrementLike(this)">
+        <i class="fas fa-heart"></i>
+        <span class="like-count">0</span>
+    </button>
+</div>
+            </div>
+        </div>
+
+</main>
+
+<!-- AOS скрипт для анимаций -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
